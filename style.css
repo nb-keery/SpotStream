@@ -1,0 +1,256 @@
+body, html
+{
+	margin: 0 auto;
+	padding: 0px;
+	background-color: rgb(34, 34 ,34);
+	min-width: 1285px;
+	width: 980px;
+}
+
+@font-face 
+{ 	
+	font-family: "tekton"; 	
+	src: url('font/TektonPro-BoldCond.otf');
+}
+
+a, li, ul
+{
+	text-decoration: none;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+/*    Navigateur du site      */
+
+nav
+{
+	display: inline-block;
+	background-color: rgb(34, 34 ,34);
+	width: 135px;
+}
+
+nav > ul > li
+{
+	text-align: center;
+	border-bottom: 4px solid rgb(58, 58, 58);
+	height: 100px;
+}
+
+nav > ul > li > a
+{
+	color: rgb(116, 116, 116);
+	vertical-align: middle;
+	font-family: tekton;
+}
+
+nav > ul > li > a > img
+{
+	display: block;
+	margin: 15px auto 0px auto;
+}
+
+
+#menu
+{
+	height: 40px;
+	font-size: 23px;
+	color: rgb(255, 255, 255);
+	vertical-align: bottom;
+	font-family: tekton;
+	padding-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*      Header - Slider    */
+
+div
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 89%;
+}
+
+
+
+
+
+
+
+
+/*     Bande Annonce    */
+
+section
+{
+	background-color: rgb(58, 58 ,58);
+}
+
+#bandeAnnonce
+{
+	background-color: rgb(34, 34, 34);
+	margin: 7px 0px 0px 10px;
+	border-bottom: 10px solid rgb(34, 34, 34);
+	width: 98%;
+}
+
+.spanEspace
+{
+	margin-right: 35px;
+}
+
+.titre
+{
+	font-family: tekton;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	margin: 4px 2px 4px 12px;
+}
+
+#bandeAnnonce > ul
+{
+	padding: 9px 0px;
+	display: block;
+	background-color: rgb(58, 58 ,58);
+	text-align: center;
+}
+
+#bandeAnnonce > ul > li
+{
+	display: inline-block;
+	margin-left: 14px;
+}
+
+#bandeAnnonce > ul > li:nth-child(1)
+{
+	margin-left: 0px;
+}
+
+#bandeAnnonce > ul > li > span
+{
+	color: rgb(255, 255, 255);
+	font-family: tekton;
+}
+
+
+
+
+
+
+/*       Nouveaux Films et Nouvelles Series      */
+
+#news
+{
+	display: inline-block;
+	width: 679px;   /* PENSER A CHANGER*/
+}
+
+.nouveaute
+{
+	background-color: rgb(34, 34, 34);
+	margin: 27px 10px 0px 9px;
+	border-bottom: 25px solid rgb(34, 34, 34);
+}
+
+table
+{
+	border-spacing: 0px;
+}
+
+th, td
+{
+	color: rgb(255, 255, 255);
+	font-family: tekton;
+	font-size: 15px;
+	padding: 7px 0px;
+}
+
+th
+{
+	width: 450px;
+}
+
+td
+{
+	width: 115px;
+}
+
+.noir
+{
+	background-color: rgb(46, 46, 46);
+}
+
+.gris
+{
+	background-color: rgb(58, 58, 58);
+}
+
+
+
+
+
+
+
+
+/*       A l'affiche et Les Plus vus    */
+
+.titreCentre
+{
+	font-family: tekton;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	text-align: center;
+	margin: 4px 0px 4px 0px;
+}
+
+.nouveaute > ul
+{
+	background-color: rgb(58, 58, 58);
+}
+
+.nouveaute > ul > li
+{
+	padding: 5px 0px 1px 10px;
+}
+
+.nouveaute > ul > li > ul
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nouveaute > ul > li > ul > li
+{
+	font-family: tekton;
+	color: rgb(255,255,255);
+}
+
+div:nth-child(3)
+{
+	width: 415px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+div:nth-child(4)
+{
+	width: 98%;
+	vertical-align: top;
+}
+
+#lesPlusVus > tbody > tr > td
+{
+	width: 1%;
+	padding-left: 50px;
+}
