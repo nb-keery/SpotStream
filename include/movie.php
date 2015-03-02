@@ -5,7 +5,9 @@ $bandeAnnonce = array(
 		array('url' => 'https://www.youtube.com/embed/8Yih-CxTWsw?showinfo=0;controls=0', 'titre' => 'Projet Almanac', 'note' => '8'),
 		array('url' => 'https://www.youtube.com/embed/lmtwxHr8t8w?showinfo=0;controls=0', 'titre' => '50 nuances de Grey', 'note' => '13'),
 		array('url' => 'https://www.youtube.com/embed/Wm3jXZhqj-I?showinfo=0;controls=0', 'titre' => 'Fast and furious 7', 'note' => '17'),
+		array('url' => 'https://www.youtube.com/embed/dkENc0r3U0M?showinfo=0;controls=0', 'titre' => 'Taken 3', 'note' => '14'),
 		); 
+
 
 $nouveauxFilms = array(
 		array('nom' => 'Still Alice', 'genre' => 'Drame', 'note' =>'17'),

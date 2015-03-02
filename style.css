@@ -103,6 +103,7 @@ section
 	margin: 7px 0px 0px 10px;
 	border-bottom: 10px solid rgb(34, 34, 34);
 	width: 98%;
+	min-width: 1126px;
 }
 
 .spanEspace
@@ -156,19 +157,14 @@ section
 	width: 679px;   /* PENSER A CHANGER*/
 }
 
-.nouveaute
+.rubrique
 {
 	background-color: rgb(34, 34, 34);
 	margin: 27px 10px 0px 9px;
 	border-bottom: 25px solid rgb(34, 34, 34);
 }
 
-table
-{
-	border-spacing: 0px;
-}
-
-th, td
+.rubrique > ul > li
 {
 	color: rgb(255, 255, 255);
 	font-family: tekton;
@@ -176,14 +172,15 @@ th, td
 	padding: 7px 0px;
 }
 
-th
+.rubrique > ul > li > span
 {
-	width: 450px;
+	width: 195px;
+	display: inline-block;
 }
 
-td
+.rubrique > ul > li > span:nth-child(3)
 {
-	width: 115px;
+	text-align: right;
 }
 
 .noir
@@ -205,6 +202,17 @@ td
 
 /*       A l'affiche et Les Plus vus    */
 
+.affiche
+{
+	background-color: rgb(34, 34, 34);
+	margin: 27px 10px 0px 9px;
+	border-bottom: 25px solid rgb(34, 34, 34);
+	height: 473px;
+	width: 415px;
+	vertical-align: top;
+	display: inline-block;
+}
+
 .titreCentre
 {
 	font-family: tekton;
@@ -214,33 +222,27 @@ td
 	margin: 4px 0px 4px 0px;
 }
 
-.nouveaute > ul
+.affiche > ul
 {
 	background-color: rgb(58, 58, 58);
+	vertical-align: middle;
 }
 
-.nouveaute > ul > li
+.affiche > ul > li
 {
 	padding: 5px 0px 1px 10px;
 }
 
-.nouveaute > ul > li > ul
+.affiche > ul > li > ul
 {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.nouveaute > ul > li > ul > li
+.affiche > ul > li > ul > li
 {
 	font-family: tekton;
 	color: rgb(255,255,255);
-}
-
-div:nth-child(3)
-{
-	width: 415px;
-	vertical-align: top;
-	display: inline-block;
 }
 
 div:nth-child(4)
@@ -249,8 +251,17 @@ div:nth-child(4)
 	vertical-align: top;
 }
 
-#lesPlusVus > tbody > tr > td
+#lesPlusVus > li > span
 {
-	width: 1%;
-	padding-left: 50px;
+	width: 218px;
+}
+
+#lesPlusVus > li > span:nth-child(3)
+{
+	text-align: left;
+}
+
+#lesPlusVus > li > span:nth-child(5)
+{
+	text-align: right;
 }
