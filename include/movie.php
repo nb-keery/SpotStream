@@ -16,6 +16,8 @@ $nouveauxFilms = array(
 		array('nom' => 'Lazarus Effect', 'genre' => 'Horreur', 'note' =>'9'),
 		array('nom' => 'Pirates des Caraïbes 5', 'genre' => 'Action, Aventure', 'note' =>'19'),
 		array('nom' => 'Taken 3', 'genre' => 'Action', 'note' =>'16'),
+		array('nom' => 'Taken 3', 'genre' => 'Action', 'note' =>'16'),
+		array('nom' => 'Taken 3', 'genre' => 'Action', 'note' =>'16'),
         );
 
 $nouvellesSeries = array(
@@ -23,6 +25,8 @@ $nouvellesSeries = array(
 		array('nom' => 'The walking dead', 'genre' => 'Drame, Epouvante', 'note' =>'11'),
 		array('nom' => 'Game of Thrones', 'genre' => 'Drame, Fantastique', 'note' =>'14'),
 		array('nom' => 'Dexter', 'genre' => 'Thriller', 'note' =>'20'),
+		array('nom' => 'Prison Break', 'genre' => 'Action', 'note' =>'19'),
+		array('nom' => 'Prison Break', 'genre' => 'Action', 'note' =>'19'),
 		array('nom' => 'Prison Break', 'genre' => 'Action', 'note' =>'19'),
         );
 

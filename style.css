@@ -1,17 +1,21 @@
-body, html
-{
-	margin: 0 auto;
-	padding: 0px;
-	background-color: rgb(34, 34 ,34);
-	min-width: 1285px;
-	width: 980px;
-}
 
 @font-face 
 { 	
 	font-family: "tekton"; 	
 	src: url('font/TektonPro-BoldCond.otf');
 }
+
+
+body, html
+{
+	margin: 0 auto;
+	padding: 0px;
+	background-color: rgb(34, 34 ,34);
+	/*min-width: 1285px;*/
+	width: 1280px;
+	font-family: tekton;
+}
+
 
 a, li, ul
 {
@@ -20,6 +24,19 @@ a, li, ul
 	padding: 0px;
 	margin: 0px;
 }
+.titre
+{
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	padding: 5px 5px 5px 15px;
+	background: #282828;
+	margin: 0;
+}
+.nuance
+{
+	background-color: rgb(46, 46, 46);
+}
+
 
 
 
@@ -44,7 +61,6 @@ nav > ul > li > a
 {
 	color: rgb(116, 116, 116);
 	vertical-align: middle;
-	font-family: tekton;
 }
 
 nav > ul > li > a > img
@@ -80,7 +96,8 @@ div
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 89%;
+	width: 1140px;
+	background-color: rgb(58, 58 ,58);
 }
 
 
@@ -92,56 +109,45 @@ div
 
 /*     Bande Annonce    */
 
-section
-{
-	background-color: rgb(58, 58 ,58);
-}
-
 #bandeAnnonce
 {
-	background-color: rgb(34, 34, 34);
-	margin: 7px 0px 0px 10px;
+	margin: 0 5px;
 	border-bottom: 10px solid rgb(34, 34, 34);
-	width: 98%;
-	min-width: 1126px;
+	text-align: center;
 }
-
 .spanEspace
 {
 	margin-right: 35px;
 }
-
-.titre
-{
-	font-family: tekton;
-	color: rgb(255, 255, 255);
-	font-size: 22px;
-	margin: 4px 2px 4px 12px;
-}
-
-#bandeAnnonce > ul
-{
-	padding: 9px 0px;
-	display: block;
-	background-color: rgb(58, 58 ,58);
-	text-align: center;
-}
-
-#bandeAnnonce > ul > li
+section > ul > li
 {
 	display: inline-block;
-	margin-left: 14px;
+	padding: 0 9px;
+	margin-top: 10px;
 }
-
-#bandeAnnonce > ul > li:nth-child(1)
+section > ul > li:nth-child(2)
 {
-	margin-left: 0px;
+	padding-left: 0;
 }
-
-#bandeAnnonce > ul > li > span
+section > ul > li:last-child
 {
+	padding-right: 0;
+}
+section > ul:first-child > li > span
+{
+	display: block;
 	color: rgb(255, 255, 255);
-	font-family: tekton;
+	position: relative;
+	margin: 0;
+}
+section > ul:first-child > li > span > i
+{
+	font-style: normal;
+}
+section > ul:first-child > li > span > i:last-child
+{
+	position: absolute;
+	right: 0;
 }
 
 
@@ -153,45 +159,46 @@ section
 
 #news
 {
-	display: inline-block;
-	width: 679px;   /* PENSER A CHANGER*/
+	margin: 25px 5px;
+	width: 1133px;
 }
-
-.rubrique
+#news > *
 {
-	background-color: rgb(34, 34, 34);
-	margin: 27px 10px 0px 9px;
-	border-bottom: 25px solid rgb(34, 34, 34);
+	display: inline-block;
 }
-
-.rubrique > ul > li
+#news > div
+{
+	width: 794px;
+}
+#news > div > ul
+{
+	margin: 0 0 25px 0;
+	border-bottom: 10px solid rgb(34, 34, 34);
+}
+#news > ul
+{
+	width: 315px;
+}
+#news > div > ul > li
 {
 	color: rgb(255, 255, 255);
-	font-family: tekton;
 	font-size: 15px;
 	padding: 7px 0px;
+	position: relative;
 }
 
-.rubrique > ul > li > span
+#news > div > ul > li > span:last-child
 {
-	width: 195px;
-	display: inline-block;
+	position: absolute;
+	right: 10px;
 }
 
-.rubrique > ul > li > span:nth-child(3)
+#news > div > ul > li > span:nth-child(2)
 {
-	text-align: right;
+	position: absolute;
+	left: 50%;
 }
 
-.noir
-{
-	background-color: rgb(46, 46, 46);
-}
-
-.gris
-{
-	background-color: rgb(58, 58, 58);
-}
 
 
 
@@ -204,42 +211,42 @@ section
 
 .affiche
 {
-	background-color: rgb(34, 34, 34);
-	margin: 27px 10px 0px 9px;
-	border-bottom: 25px solid rgb(34, 34, 34);
-	height: 473px;
-	width: 415px;
-	vertical-align: top;
-	display: inline-block;
+	margin: 0 0 0 21px;
+	border-bottom: 10px solid rgb(34, 34, 34);
 }
 
-.titreCentre
+.affiche > h2
 {
-	font-family: tekton;
-	color: rgb(255, 255, 255);
-	font-size: 22px;
 	text-align: center;
-	margin: 4px 0px 4px 0px;
 }
 
-.affiche > ul
+.affiche
 {
 	background-color: rgb(58, 58, 58);
 	vertical-align: middle;
+	height: 580px;
+	overflow: auto;
 }
 
-.affiche > ul > li
+.affiche > li
 {
-	padding: 5px 0px 1px 10px;
+	padding: 5px 0px 5px 10px;
 }
 
-.affiche > ul > li > ul
+.affiche > li > img
+{
+	display: inline-block;
+	width: 90px;
+}
+
+.affiche > li > ul
 {
 	display: inline-block;
 	vertical-align: top;
+	width: 190px;
 }
 
-.affiche > ul > li > ul > li
+.affiche > li > ul > li
 {
 	font-family: tekton;
 	color: rgb(255,255,255);
