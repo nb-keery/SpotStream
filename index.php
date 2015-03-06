@@ -31,45 +31,35 @@
 					<div>
 						<ul>
 							<h2 class="titre">Nouveaux Films</h2>
-							<?php for ($a=0; $a < count($nouveauxFilms); $a++) { 
-								echo '<li class="';
-								if ($a%2 == 0) {
-								echo "gris\">";
-								}
-								else {
-								echo "nuance\">";
-								}
-
-								echo '<span>' . $nouveauxFilms[$a]['nom'] . ' </span>
-										<span>' . $nouveauxFilms[$a]['genre'] . ' </span>
-										<span>' . $nouveauxFilms[$a]['note'] . '/20 </span></li>'; } ?>
+							<?php for ($i=0; $i < count($nouveauxFilms); $i++) { ?>
+								<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
+							<?php
+								echo '<span>' . $nouveauxFilms[$i]['nom'] . ' </span>
+										<span>' . $nouveauxFilms[$i]['genre'] . ' </span>
+										<span>' . $nouveauxFilms[$i]['note'] . '/20 </span>
+								</li>'; } ?>
 						</ul>
 						<ul>
 						<h2 class="titre">Nouvelles Series</h2>
-							<?php for ($z=0; $z < count($nouvellesSeries); $z++) { 
-								echo '<li class="';
-								if ($z%2 == 0) {
-								echo "gris\">";
-								}
-								else {
-								echo "nuance\">";
-								}
-
-								echo '<span>' . $nouvellesSeries[$z]['nom'] . ' </span>
-										<span>' . $nouvellesSeries[$z]['genre'] . ' </span>
-										<span>' . $nouvellesSeries[$z]['note'] . '/20 </span></li>'; } ?>
+							<?php for ($i=0; $i < count($nouvellesSeries); $i++) { ?>
+								<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
+							<?php
+								echo '<span>' . $nouvellesSeries[$i]['nom'] . ' </span>
+										<span>' . $nouvellesSeries[$i]['genre'] . ' </span>
+										<span>' . $nouvellesSeries[$i]['note'] . '/20 </span>
+								</li>'; } ?>
 						</ul>
 					</div>
 					<ul class="affiche">
 						<h2 class="titre">A l'affiche</h2>
-						<?php for ($r=0; $r < count($affiche); $r++) { 
-						echo '<li><img src="img/' . $affiche[$r]['img'] . '">
+						<?php for ($i=0; $i < count($affiche); $i++) { 
+						echo '<li><img src="img/' . $affiche[$i]['img'] . '">
 								<ul>
-									<li>' . $affiche[$r]['nom'] . ' </li>
-									<li>' . $affiche[$r]['duree'] . ' </li>
-									<li>' . $affiche[$r]['realisateur'] . ' </li>
-									<li>' . $affiche[$r]['acteur'] . '</li>
-									<li>' . $affiche[$r]['note'] . '/20 </li>
+									<li>' . $affiche[$i]['nom'] . ' </li>
+									<li>' . $affiche[$i]['duree'] . ' </li>
+									<li>' . $affiche[$i]['realisateur'] . ' </li>
+									<li>' . $affiche[$i]['acteur'] . '</li>
+									<li>' . $affiche[$i]['note'] . '/20 </li>
 								</ul>'; } ?>
 					</ul>
 				</div>
@@ -79,19 +69,15 @@
 
 					<ul id="lesPlusVus">
 						<h2 class="titre">Les Plus Vus</h2>
-						<?php for ($e=0; $e < count($lesPlusVus); $e++) { 
-							echo '<li class="';
-							if ($e%2 == 0) {
-							echo "gris\">";
-							}
-							else {
-							echo "nuance\">";
-							}
-							echo '<span>' . $lesPlusVus[$e]['type'] . ' </span>
-									<span>' . $lesPlusVus[$e]['nom'] . ' </span>
-									<span>' . $lesPlusVus[$e]['genre'] . ' </span>
-									<span>' . $lesPlusVus[$e]['vues'] . ' vues </span>
-									<span>' . $lesPlusVus[$e]['note'] . '/20 </span></li>'; } ?>
+						<?php for ($i=0; $i < count($lesPlusVus); $i++) { ?>
+								<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
+							<?php
+							echo '<span>' . $lesPlusVus[$i]['nom'] . ' </span>
+									<span>' . $lesPlusVus[$i]['type'] . ' </span>
+									<span>' . $lesPlusVus[$i]['genre'] . ' </span>
+									<span>' . $lesPlusVus[$i]['vues'] . ' vues </span>
+									<span>' . $lesPlusVus[$i]['note'] . '/20 </span>
+								</li>'; } ?>
 					</ul>
 			</section>
 		</div>

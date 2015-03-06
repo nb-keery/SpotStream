@@ -247,6 +247,7 @@ div
 	display: inline-block;
 	vertical-align: top;
 	width: 190px;
+	padding-left: 8px;
 }
 
 .affiche > li > ul > li
@@ -285,5 +286,17 @@ div:nth-child(4)
 #lesPlusVus > li > span:nth-child(2)
 {
 	position: absolute;
-	left: 50%;
+	left: 25%;
+}
+
+#lesPlusVus > li > span:nth-child(3)
+{
+	position: absolute;
+	left: 45%;
+}
+
+#lesPlusVus > li > span:nth-child(4)
+{
+	position: absolute;
+	left: 65%;
 }
