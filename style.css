@@ -15,10 +15,13 @@ body, html
 	width: 100%;
 	font-family: tekton;
 	border-bottom: 10px solid rgb(34, 34, 34);
+<<<<<<< HEAD
 }
 iframe
 {
 	width: 100%;
+=======
+>>>>>>> 4f848da09705a4ac8eaf44540a45e321dfe9e850
 }
 
 a, li, ul
@@ -188,7 +191,11 @@ body > div > *
 }
 #news > ul
 {
+<<<<<<< HEAD
 	width: 32%;
+=======
+	width: 315px;
+>>>>>>> 4f848da09705a4ac8eaf44540a45e321dfe9e850
 	height: 590px;
 }
 #news > div > ul > li
@@ -223,7 +230,11 @@ body > div > *
 
 .affiche
 {
+<<<<<<< HEAD
 	margin: 0 0 0 2%;
+=======
+	margin: 0 0 0 20px;
+>>>>>>> 4f848da09705a4ac8eaf44540a45e321dfe9e850
 	border-bottom: 10px solid rgb(34, 34, 34);
 }
 
@@ -255,7 +266,11 @@ body > div > *
 {
 	display: inline-block;
 	vertical-align: top;
+<<<<<<< HEAD
 	width: 50%;
+=======
+	width: 190px;
+>>>>>>> 4f848da09705a4ac8eaf44540a45e321dfe9e850
 	padding-left: 8px;
 }
 
