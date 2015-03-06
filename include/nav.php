@@ -1,6 +1,6 @@
 <nav>
 	<ul>
-		<li id="menu">Menu</li>
+		<li>Menu</li>
 		<li><a href=""><img src="img/rechercher.png" >Rechercher</a></li>
 		<li><a href="index.php"><img src="img/accueil.png" >Accueil</a></li>
 		<li><a href=""><img src="img/cinema.png" >Cinéma</a></li>

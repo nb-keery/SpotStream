@@ -9,60 +9,66 @@
 		
 	
 	<body>	
-
-		<div>
 		<?php include ('include/nav.php'); ?>
-			<header>
-				<img src="img/slider1.jpg" height="325" width="100%">
-			</header>
+		<header>
+			<img src="img/slider1.jpg" height="325" width="100%">
+		</header>
 
-			<section>
-				<ul id="bandeAnnonce">
-					<h2 class="titre">Bande Annonce</h2>
-					<?php include ('include/movie.php'); ?>
-					<?php for ($i=0; $i < count($bandeAnnonce) ; $i++) { 
+		<section>
+			<ul id="bandeAnnonce">
+				<h2 class="titre">Bande Annonce</h2>
+				<?php include ('include/movie.php'); ?> <!-- acceptable just pour le moment-->
+				<?php for ($i=0; $i < count($bandeAnnonce) ; $i++){ 
 						echo '	<li>
 									<iframe width="209" height="155" src="' . $bandeAnnonce[$i]['url'] . '" frameborder="0" allowfullscreen></iframe>
-									<span class="spanEspace"><i>' . $bandeAnnonce[$i]['titre'] . '</i><i>' . $bandeAnnonce[$i]['note'] . '/20</i></span>
-								</li>'; }?>
-				</ul>
+									<span>
+										<i>' . $bandeAnnonce[$i]['titre'] . '</i>
+										<i>' . $bandeAnnonce[$i]['note'] . '/20</i>
+									</span>
+								</li>'; }
+				?>
+			</ul>
 
-				<div id="news">
-					<div>
-						<ul>
-							<h2 class="titre">Nouveaux Films</h2>
-							<?php for ($i=0; $i < count($nouveauxFilms); $i++) { ?>
+			<div id="news">
+				<div>
+					<ul>
+						<h2 class="titre">Nouveaux Films</h2>
+						<?php for ($i=0; $i < count($nouveauxFilms); $i++) { ?>
 								<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
 							<?php
 								echo '<span>' . $nouveauxFilms[$i]['nom'] . ' </span>
-										<span>' . $nouveauxFilms[$i]['genre'] . ' </span>
-										<span>' . $nouveauxFilms[$i]['note'] . '/20 </span>
-								</li>'; } ?>
-						</ul>
-						<ul>
-						<h2 class="titre">Nouvelles Series</h2>
-							<?php for ($i=0; $i < count($nouvellesSeries); $i++) { ?>
-								<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
+									<span>' . $nouveauxFilms[$i]['genre'] . ' </span>
+									<span>' . $nouveauxFilms[$i]['note'] . '/20 </span>
+								</li>'; 
+							} 
+						?>
+					</ul>
+					<ul>
+					<h2 class="titre">Nouvelles Series</h2>
+						<?php for ($i=0; $i < count($nouvellesSeries); $i++) { ?>
+							<li <?php echo $i%2 == 0 ? "" : "class='nuance'"; ?> >
 							<?php
 								echo '<span>' . $nouvellesSeries[$i]['nom'] . ' </span>
-										<span>' . $nouvellesSeries[$i]['genre'] . ' </span>
-										<span>' . $nouvellesSeries[$i]['note'] . '/20 </span>
-								</li>'; } ?>
-						</ul>
-					</div>
-					<ul class="affiche">
-						<h2 class="titre">A l'affiche</h2>
-						<?php for ($i=0; $i < count($affiche); $i++) { 
-						echo '<li><img src="img/' . $affiche[$i]['img'] . '">
-								<ul>
-									<li>' . $affiche[$i]['nom'] . ' </li>
-									<li>' . $affiche[$i]['duree'] . ' </li>
-									<li>' . $affiche[$i]['realisateur'] . ' </li>
-									<li>' . $affiche[$i]['acteur'] . '</li>
-									<li>' . $affiche[$i]['note'] . '/20 </li>
-								</ul>'; } ?>
+									<span>' . $nouvellesSeries[$i]['genre'] . ' </span>
+									<span>' . $nouvellesSeries[$i]['note'] . '/20 </span>
+							</li>'; 
+						}?>
 					</ul>
 				</div>
+
+				<ul>
+					<h2 class="titre">A l'affiche</h2>
+					<?php for ($i=0; $i < count($affiche); $i++) { 
+					echo '<li><img src="img/' . $affiche[$i]['img'] . '">
+							<ul>
+								<li>' . $affiche[$i]['nom'] . ' </li>
+								<li>' . $affiche[$i]['duree'] . ' </li>
+								<li>' . $affiche[$i]['realisateur'] . ' </li>
+								<li>' . $affiche[$i]['acteur'] . '</li>
+								<li>' . $affiche[$i]['note'] . '/20 </li>
+							</ul>'; } ?>
+				</ul>
+			</div>
 
 
 	
@@ -80,6 +86,5 @@
 								</li>'; } ?>
 					</ul>
 			</section>
-		</div>
 	</body>
 </html>
