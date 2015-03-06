@@ -14,6 +14,7 @@ body, html
 	/*min-width: 1285px;*/
 	width: 1280px;
 	font-family: tekton;
+	border-bottom: 10px solid rgb(34, 34, 34);
 }
 
 
@@ -119,32 +120,33 @@ div
 {
 	margin-right: 35px;
 }
-section > ul > li
+#bandeAnnonce > li
 {
 	display: inline-block;
 	padding: 0 9px;
 	margin-top: 10px;
 }
-section > ul > li:nth-child(2)
+#bandeAnnonce > li:nth-child(2)
 {
 	padding-left: 0;
 }
-section > ul > li:last-child
+#bandeAnnonce > li:last-child
 {
 	padding-right: 0;
 }
-section > ul:first-child > li > span
+#bandeAnnonce:first-child > li > span
 {
 	display: block;
 	color: rgb(255, 255, 255);
 	position: relative;
 	margin: 0;
+	text-align: left;
 }
-section > ul:first-child > li > span > i
+#bandeAnnonce:first-child > li > span > i
 {
 	font-style: normal;
 }
-section > ul:first-child > li > span > i:last-child
+#bandeAnnonce:first-child > li > span > i:last-child
 {
 	position: absolute;
 	right: 0;
@@ -178,6 +180,7 @@ section > ul:first-child > li > span > i:last-child
 #news > ul
 {
 	width: 315px;
+	height: 590px;
 }
 #news > div > ul > li
 {
@@ -211,7 +214,7 @@ section > ul:first-child > li > span > i:last-child
 
 .affiche
 {
-	margin: 0 0 0 21px;
+	margin: 0 0 0 20px;
 	border-bottom: 10px solid rgb(34, 34, 34);
 }
 
@@ -225,7 +228,7 @@ section > ul:first-child > li > span > i:last-child
 	background-color: rgb(58, 58, 58);
 	vertical-align: middle;
 	height: 580px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .affiche > li
@@ -257,18 +260,30 @@ div:nth-child(4)
 	width: 98%;
 	vertical-align: top;
 }
-
-#lesPlusVus > li > span
+#lesPlusVus
 {
-	width: 218px;
+	margin: 0 5px;
+}
+#lesPlusVus > h2
+{
+	text-align: center;
+	margin: 0;
+}
+#lesPlusVus > li
+{
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	padding: 7px 0px;
+	position: relative;
+}
+#lesPlusVus > li > span:last-child
+{
+	position: absolute;
+	right: 10px;
 }
 
-#lesPlusVus > li > span:nth-child(3)
+#lesPlusVus > li > span:nth-child(2)
 {
-	text-align: left;
-}
-
-#lesPlusVus > li > span:nth-child(5)
-{
-	text-align: right;
+	position: absolute;
+	left: 50%;
 }

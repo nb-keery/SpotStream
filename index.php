@@ -78,7 +78,7 @@
 	
 
 					<ul id="lesPlusVus">
-						<h2 class="titreCentre">Les Plus Vus</h2>
+						<h2 class="titre">Les Plus Vus</h2>
 						<?php for ($e=0; $e < count($lesPlusVus); $e++) { 
 							echo '<li class="';
 							if ($e%2 == 0) {
