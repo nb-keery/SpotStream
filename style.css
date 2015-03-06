@@ -12,10 +12,14 @@ body, html
 	padding: 0px;
 	background-color: rgb(34, 34 ,34);
 	/*min-width: 1285px;*/
-	width: 1280px;
+	width: 100%;
 	font-family: tekton;
+	border-bottom: 10px solid rgb(34, 34, 34);
 }
-
+iframe
+{
+	width: 100%;
+}
 
 a, li, ul
 {
@@ -46,39 +50,38 @@ a, li, ul
 nav
 {
 	display: inline-block;
-	background-color: rgb(34, 34 ,34);
-	width: 135px;
+	margin: 0!important;
+	position: fixed;
+	background: #222;
 }
-
 nav > ul > li
 {
 	text-align: center;
-	border-bottom: 4px solid rgb(58, 58, 58);
-	height: 100px;
+	border-bottom: 2px solid rgb(58, 58, 58);
+	padding: 5px;
 }
 
 nav > ul > li > a
 {
 	color: rgb(116, 116, 116);
 	vertical-align: middle;
+	font-size: 11px;
 }
 
 nav > ul > li > a > img
 {
 	display: block;
-	margin: 15px auto 0px auto;
+	width: 45px;
 }
 
 
 #menu
 {
-	height: 40px;
-	font-size: 23px;
-	color: rgb(255, 255, 255);
-	vertical-align: bottom;
-	font-family: tekton;
-	padding-top: 200px;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 170px;
 }
+
 
 
 
@@ -94,10 +97,16 @@ nav > ul > li > a > img
 
 div
 {
-	display: inline-block;
+	display: block;
 	vertical-align: top;
-	width: 1140px;
+	width: 95%;
 	background-color: rgb(58, 58 ,58);
+	margin: 0 auto;
+	position: relative;
+}
+body > div > *
+{
+	margin-left: 55px;
 }
 
 
@@ -119,32 +128,34 @@ div
 {
 	margin-right: 35px;
 }
-section > ul > li
+#bandeAnnonce > li
 {
 	display: inline-block;
-	padding: 0 9px;
+	padding: 0 1%;
 	margin-top: 10px;
+	width: 18%;
 }
-section > ul > li:nth-child(2)
+#bandeAnnonce > li:nth-child(2)
 {
 	padding-left: 0;
 }
-section > ul > li:last-child
+#bandeAnnonce > li:last-child
 {
 	padding-right: 0;
 }
-section > ul:first-child > li > span
+#bandeAnnonce:first-child > li > span
 {
 	display: block;
 	color: rgb(255, 255, 255);
 	position: relative;
 	margin: 0;
+	text-align: left;
 }
-section > ul:first-child > li > span > i
+#bandeAnnonce:first-child > li > span > i
 {
 	font-style: normal;
 }
-section > ul:first-child > li > span > i:last-child
+#bandeAnnonce:first-child > li > span > i:last-child
 {
 	position: absolute;
 	right: 0;
@@ -160,7 +171,7 @@ section > ul:first-child > li > span > i:last-child
 #news
 {
 	margin: 25px 5px;
-	width: 1133px;
+	width: 99%;
 }
 #news > *
 {
@@ -168,7 +179,7 @@ section > ul:first-child > li > span > i:last-child
 }
 #news > div
 {
-	width: 794px;
+	width: 65%;
 }
 #news > div > ul
 {
@@ -177,7 +188,8 @@ section > ul:first-child > li > span > i:last-child
 }
 #news > ul
 {
-	width: 315px;
+	width: 32%;
+	height: 590px;
 }
 #news > div > ul > li
 {
@@ -211,7 +223,7 @@ section > ul:first-child > li > span > i:last-child
 
 .affiche
 {
-	margin: 0 0 0 21px;
+	margin: 0 0 0 2%;
 	border-bottom: 10px solid rgb(34, 34, 34);
 }
 
@@ -225,7 +237,7 @@ section > ul:first-child > li > span > i:last-child
 	background-color: rgb(58, 58, 58);
 	vertical-align: middle;
 	height: 580px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .affiche > li
@@ -243,7 +255,8 @@ section > ul:first-child > li > span > i:last-child
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 190px;
+	width: 50%;
+	padding-left: 8px;
 }
 
 .affiche > li > ul > li
@@ -257,18 +270,42 @@ div:nth-child(4)
 	width: 98%;
 	vertical-align: top;
 }
-
-#lesPlusVus > li > span
+#lesPlusVus
 {
-	width: 218px;
+	margin: 0 5px;
+}
+#lesPlusVus > h2
+{
+	text-align: center;
+	margin: 0;
+}
+#lesPlusVus > li
+{
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	padding: 7px 0px;
+	position: relative;
+}
+#lesPlusVus > li > span:last-child
+{
+	position: absolute;
+	right: 10px;
+}
+
+#lesPlusVus > li > span:nth-child(2)
+{
+	position: absolute;
+	left: 25%;
 }
 
 #lesPlusVus > li > span:nth-child(3)
 {
-	text-align: left;
+	position: absolute;
+	left: 45%;
 }
 
-#lesPlusVus > li > span:nth-child(5)
+#lesPlusVus > li > span:nth-child(4)
 {
-	text-align: right;
+	position: absolute;
+	left: 65%;
 }
