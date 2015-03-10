@@ -13,8 +13,7 @@ $url4 ="http://rss.allocine.fr/ac/cine/cettesemaine";
 // initialisation
 $curl = curl_init();
 // on appele le fichier xml
-curl_setopt($curl, CURLOPT_URL, $url4);
-curl_setopt($curl, CURLOPT_URL, "http://next-episode.net/rss.xml");
+curl_setopt($curl, CURLOPT_URL, "http://rss.allocine.fr/ac/cine/alaffiche");
 // on empêche l'affichage du contenu
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $contenu = curl_exec($curl);
@@ -22,13 +21,15 @@ $contenu = curl_exec($curl);
 $xml = new simpleXMLElement($contenu);
 // var_dump($xml);
 foreach ($xml->channel->item as $v){
-	// var_dump($v);
-	$idVideo = $v->description;
-	$idVideo = explode("Bandes-annonces", $idVideo)[0];
-	$idVideo = (int)substr($idVideo, -28, 8);
-	if($idVideo != 0){
-		echo '<iframe src="http://www.allocine.fr/_video/iblogvision.aspx?cmedia='.$idVideo.'" style="width:480px; height:270px" frameborder="0"></iframe>';
-	}
+	 $idVideo = $v->description;
+	$idVideo = explode("|", $idVideo)[2];
+	$idVideo = explode("cmedia=", $idVideo)[1];
+	$idVideo = explode(".html", $idVideo)[0];
+	//$idVideo = (int)substr($idVideo, -28, 8);
+	//if($idVideo != 0){
+	//	echo '<iframe src="http://www.allocine.fr/_video/iblogvision.aspx?cmedia='.$idVideo.'" style="width:480px; height:270px" frameborder="0"></iframe>';
+	//}
+	var_dump($idVideo);
 	
 }
 ?>

@@ -1,12 +1,15 @@
+	<?php  $url = $_SERVER['REQUEST_URI'];
+	      $page = explode("/", $url);
+		  $nav = end($page);?>
 <nav>
 	<ul>
-		<li>Menu</li>
-		<li><a href=""><img src="img/rechercher.png" >Rechercher</a></li>
-		<li><a href="index.php"><img src="img/accueil.png" >Accueil</a></li>
-		<li><a href=""><img src="img/cinema.png" >Cinéma</a></li>
-		<li><a href=""><img src="img/serie.png" >Série</a></li>
-		<li><a href=""><img src="img/film.png" >Film</a></li>
-		<li><a href=""><img src="img/forum.png"  >Forum</a></li>
-		<li><a href=""><img src="img/parametre.png">Paramètre</a></li>
+		<li style="background-image: url('')">Menu</li>
+		<li <?php echo $nav == 'index.php?pg=rechercher' ? 'class="actif"' : ''; ?>><a href="">Rechercher</a></li>
+		<li <?php echo $nav == 'index.php?pg=accueil' ? 'class="actif"' : ' ' ;  ?>><a href="index.php?pg=accueil">Accueil</a></li>
+		<li <?php echo $nav == 'index.php?pg=cinema' ? 'class="actif"' : ' ' ;  ?>><a href="index.php?pg=cinema">Cinéma</a></li>
+		<li <?php echo $nav == 'index.php?pg=serie' ? 'class="actif"' : ' ' ;  ?>><a href="index.php?pg=serie">Série</a></li>
+		<li <?php echo $nav == 'index.php?pg=film' ? 'class="actif"' : ' ' ;  ?>><a href="index.php?pg=film">Film</a></li>
+		<li <?php echo $nav == 'index.php?pg=forum' ? 'class="actif"' : ' ' ;  ?>><a href="index.php?pg=forum">Forum</a></li>
+		<li class=""><a href="index.php?pg=">Paramètre</a></li>
 	</ul>
 </nav>

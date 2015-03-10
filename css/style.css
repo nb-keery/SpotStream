@@ -2,14 +2,14 @@
 @font-face 
 { 	
 	font-family: "tekton"; 	
-	src: url('font/TektonPro-BoldCond.otf');
+	src: url('../font/TektonPro-BoldCond.otf');
 }
 
 
 body, html
 {
-	margin: 0 auto;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	background-color: #3a3a3a;
 	width: 100%;
 	font-family: tekton;
@@ -62,7 +62,89 @@ nav > ul > li
 	text-align: center;
 	border-bottom: 2px solid rgb(58, 58, 58);
 	padding: 5px;
+	width: 45px;
+	height: 45px;
+	background-repeat: no-repeat;
+	background-position: 50% 15%;
+	background-size: 40px;
 }
+
+nav > ul > li:nth-child(2)
+{
+	background-image: url('../img/rechercher.png');
+}
+
+nav > ul > li:nth-child(3)
+{
+	background-image: url('../img/accueil1.png');
+}
+
+
+nav > ul > li:nth-child(4)
+{
+	background-image: url('../img/cinema.png');
+}
+
+
+nav > ul > li:nth-child(5)
+{
+	background-image: url('../img/serie.png');
+}
+
+
+nav > ul > li:nth-child(6)
+{
+	background-image: url('../img/film.png');
+}
+
+
+nav > ul > li:nth-child(7)
+{
+	background-image: url('../img/forum.png');
+}
+
+
+nav > ul > li:nth-child(8)
+{
+	background-image: url('../img/parametre.png');
+}
+
+
+nav > ul > li:hover:nth-child(2), li.actif:nth-child(2)
+{
+	background-image: url('../img/rechercher1.png');
+}
+
+nav > ul > li:hover:nth-child(3) , li.actif:nth-child(3)
+{
+	background-image: url('../img/accueil.png');
+}
+
+nav > ul > li:hover:nth-child(4),  li.actif:nth-child(4)
+{
+	background-image: url('../img/cinema1.png');
+}
+
+nav > ul > li:hover:nth-child(5), li.actif:nth-child(5)
+{
+	background-image: url('../img/serie1.png');
+}
+
+nav > ul > li:hover:nth-child(6), li.actif:nth-child(6)
+{
+	background-image: url('../img/film1.png');
+}
+
+nav > ul > li:hover:nth-child(7), li.actif:nth-child(7)
+{
+	background-image: url('../img/forum1.png');
+}
+
+nav > ul > li:hover:nth-child(8), li.actif:nth-child(8)
+{
+	background-image: url('../img/parametre1.png');
+}
+
 nav > ul > li:first-child
 {
 	font-size: 20px;
@@ -72,16 +154,10 @@ nav > ul > li:first-child
 nav > ul > li > a
 {
 	color: rgb(116, 116, 116);
-	vertical-align: middle;
 	font-size: 11px;
-}
-nav > ul > li > a > img
-{
 	display: block;
-	width: 45px;
+	margin-top: 85%;
 }
-
-
 
 
 
@@ -94,6 +170,10 @@ nav > ul > li > a > img
 
 
 /*      Header - Slider    */
+
+
+
+												/*          PAGE D'ACCUEIL        */
 
 
 
@@ -205,7 +285,7 @@ nav > ul > li > a > img
 #news > ul
 {
 	margin: 0 0 0 2%;
-	border-bottom: 10px solid #222;
+	border-bottom: 10px solid;
 }
 
 #news > ul > h2
@@ -289,3 +369,87 @@ div:nth-child(4)
 	position: absolute;
 	left: 65%;
 }
+
+
+
+
+													/*     PAGE CINEMA      */
+
+.filmCinema
+{
+	margin-left: 55px;
+}
+
+.filmCinema > li
+{
+	background-color: #222;
+	margin: 0 auto 25px auto;
+	width: 80%;
+	position: relative;
+	max-height: 800px;
+}
+
+.filmCinema > li > img
+{
+	display: inline-block;
+	margin: 34px 8px;
+}
+
+
+.filmCinema > li > ul
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 34px;
+	position: relative;
+}
+
+.filmCinema > li > ul > li
+{
+	color: white;
+	font-size: 18px;
+}
+
+.filmCinema > li > ul > li > span:nth-child(1)
+{
+	color: rgb(94, 94, 94);
+	vertical-align: top;
+}
+
+.filmCinema > li > ul > li > span:nth-child(2)
+{
+	position: absolute;
+	left: 27%;
+	min-width: 125%;
+}
+
+.filmCinema > li > ul > li > p
+{
+	width: 450px;
+	display: inline-block;
+	margin: 0px 0px 0px 27%;
+}
+
+/*   Bouton Bande Annonce*/
+.filmCinema > li > button
+{
+	color: white;
+	background-color: black;
+	padding: 5px 0px;
+	width: 136px;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px #3a3a3a;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5px;
+	left: 45%;
+}
+
+.filmCinema > li > button > img
+{
+	margin: 0 auto;
+	display: block;
+}
+
+
+
