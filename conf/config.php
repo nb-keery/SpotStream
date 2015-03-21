@@ -7,5 +7,11 @@
 define("PATH_IMG",				"img/");
 
 // nom des tables de la base
-define("TABLE_IMAGE", 			"sp_image");
 define("TABLE_AFFICHE",			"sp_affiche");
+define("TABLE_FILM",			"sp_film");
+define("TABLE_GENRE",			"sp_genre");
+define("TABLE_IMAGE", 			"sp_image");
+define("TABLE_SERIE",			"sp_serie");
+define("TABLE_CINENEWS",			"sp_cineNews");
+define("TABLE_VIDEO", 			"sp_video");
+define("TABLE_SERIENEWS",			"sp_serieNews");

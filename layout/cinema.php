@@ -3,7 +3,7 @@
 		<?php 
 				for ($film=0; $film < count($donnees); $film++) {
 					echo '
-					<li>
+					<li><a href="cinema?id='. $donnees[$film]['id'] .'">
 						<h2 class="titre">' . $donnees[$film]['titre'] . ' </h2>
 						<img src=" ' . $donnees[$film]['img'] .'" width="220">
 						<ul>
@@ -13,7 +13,7 @@
 							<li><span>Note</span><span>' . $donnees[$film]['note'] . '/5</span></li>
 							<li><span>Synopsis</span><p>' . $donnees[$film]['synopsis'] . '</p></li>
 						</ul>
-						<button>Bande-Annonce <img src="img/play.png" width="53"></button>
-					</li>';	} ?>
+						<button>Bande-Annonce<img src="img/play.png" width="53"></button>
+					</li>';	}?>
 	</ul>
 </section>

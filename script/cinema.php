@@ -1,4 +1,3 @@
 <?php 
-	$req = $dbh->query("SELECT * FROM " . TABLE_AFFICHE .' , '. TABLE_IMAGE . "
-						WHERE id = id_image");
+	$req = $dbh->query("SELECT * FROM ". TABLE_AFFICHE ." LEFT OUTER JOIN ". TABLE_IMAGE ." ON ". TABLE_AFFICHE .".id = ". TABLE_IMAGE.".id ");
 	$donnees = $req->fetchAll();

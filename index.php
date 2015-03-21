@@ -11,7 +11,6 @@
 	<body>	
 		<?php include ('conf/config.php'); ?>
 		<?php include ('include/nav.php'); ?>
-		<?php include ('include/header.php'); ?>
 		<?php if ($_GET['pg']) {
 				$page = $_GET['pg'].'.php';
 				if (file_exists('script/'.$page)) {

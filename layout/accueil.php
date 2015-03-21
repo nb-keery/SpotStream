@@ -1,13 +1,14 @@
+<?php include ('include/header.php'); ?>
 <section>
 	<ul id="bandeAnnonce">
 		<h2 class="titre">Bande Annonce</h2>
 		<?php include ('include/movie.php'); ?> <!-- acceptable just pour le moment-->
-		<?php for ($i=0; $i < count($bandeAnnonce) ; $i++){ 
+		<?php for ($i=0; $i < count($BA) ; $i++){ 
 				echo '	<li>
-							<iframe width="209" height="155" src="' . $bandeAnnonce[$i]['url'] . '" frameborder="0" allowfullscreen></iframe>
+							<iframe width="209" height="155" src="http://www.allocine.fr/_video/iblogvision.aspx?cmedia=' . $BA[$i]['bandeAnnonce'] . '" frameborder="0" allowfullscreen></iframe>
 							<span>
-								<i>' . $bandeAnnonce[$i]['titre'] . '</i>
-								<i>' . $bandeAnnonce[$i]['note'] . '/20</i>
+							<i>' . $BA[$i]['titre'] . '</i>
+							<i>0/5</i>
 							</span>
 						</li>'; }
 		?>
@@ -43,7 +44,7 @@
 			<?php 
 			
 			for ($i=0; $i < count($donnees) ; $i++) {
-				echo '<li><img src=" ' . $donnees[$i]['img'] . '">
+				echo '<li><img src=" ' . $donnees[$i]['lien_image'] . '">
 					<ul>
 						<li>' . $donnees[$i]['titre'] . ' </li>
 						<li>' . $donnees[$i]['duree'] . ' </li>

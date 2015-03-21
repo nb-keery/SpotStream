@@ -37,10 +37,3 @@ $lesPlusVus = array(
 		array('type' => 'Série', 'nom' => 'Dexter', 'genre' => 'Thriller', 'vues' =>'248 162', 'note' =>'20'),
 		array('type' => 'Film', 'nom' => 'Very  Bad Trip 2', 'genre' => 'Comédie', 'vues' =>'183 628', 'note' =>'12'),
         ); 
-
-$affiche = array(
-		array('img' => 'ledernierloup.jpg', 'nom' => 'Le dernier loup', 'duree' => '1h55', 'realisateur' => 'Jean-Jacques Annaud', 'acteur' => 'Feng Shaofeng, Shawn Dou, Ankhnyam Ragchaa', 'note' =>'15'),
-		array('img' => 'leschevaliersduzodiaque.jpg', 'nom' => 'Les Chevaliers du zodiaque', 'duree' => '1h33', 'realisateur' => 'Keichi Sato', 'acteur' => 'Nobuhiko Okamoto, Kenji Nojima, Rikiya Koyama', 'note' =>'11'),
-		array('img' => 'annie.jpg', 'nom' => 'Annie', 'duree' => '1h57', 'realisateur' => 'Will Gluck', 'acteur' => 'Jamie Foxx, Quvenzhané Wallis, Rose Byrne', 'note' =>'14'),
-		array('img' => 'tracers.jpg', 'nom' => 'Tracers', 'duree' => '1H33', 'realisateur' => 'Daniel Benmayor', 'acteur' => 'Taylor Lautner, Marie Avgeropoulos, Adam Rayner', 'note' =>'20'),
-        ); ?>
